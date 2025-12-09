@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Portfolio - A student learning web development">
+    <title>My Portfolio - Student Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">My Portfolio</div>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <span class="sun-icon">☀️</span>
+                <span class="moon-icon">🌙</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="fade-in">Hello, I'm a Student Developer</h1>
+                <p class="hero-subtitle">Learning & Building Web Technologies</p>
+                <a href="#contact" class="cta-button">Get In Touch</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a student who’s passionate about Web Development and Technology. I'm continuously learning and improving my skills in HTML, CSS, Java, and other programming languages.</p>
+                    <p>My focus is on building functional, and user-friendly web applications. I believe in continuous learning and staying updated with the latest technologies.</p>
+                    
+                    <!-- Media Element: Audio -->
+                    <div class="media-container">
+                        <h3>Introduction Audio</h3>
+                        <audio controls>
+                            <source src="assets/audio1.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+
+                    <!-- Media Element: Video -->
+                    <div class="media-container">
+                        <h3>Portfolio Video</h3>
+                        <video controls poster="video-poster.jpg">
+                            <source src="assets/intro.mp4" type="video/mp4">
+                            <source src="portfolio-video.webm" type="video/webm">
+                            Your browser does not support the video element.
+                        </video>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="assets/me2.png" alt="Profile Picture" id="profileImage">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-grid">
+                <article class="skill-card">
+                    <div class="skill-icon">📄</div>
+                    <h3>HTML & CSS</h3>
+                    <p>Building semantic and responsive web layouts with modern CSS techniques</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" data-level="75"></div>
+                    </div>
+                </article>
+
+                <article class="skill-card">
+                    <div class="skill-icon">☕</div>
+                    <h3>Java</h3>
+                    <p>Object-oriented programming and application development</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" data-level="60"></div>
+                    </div>
+                </article>
+
+                <article class="skill-card">
+                    <div class="skill-icon">🌐</div>
+                    <h3>Networking</h3>
+                    <p>Understanding network protocols and basic network configuration</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" data-level="40"></div>
+                    </div>
+                </article>
+
+                <article class="skill-card">
+                    <div class="skill-icon">📚</div>
+                    <h3>Always Learning</h3>
+                    <p>Continuously exploring new technologies and frameworks</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" data-level="100"></div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            
+            <!-- Project Filter -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="html">HTML/CSS</button>
+                <button class="filter-btn" data-filter="javascript">JavaScript</button>
+               
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid" id="projectsGrid">
+                <article class="project-card" data-category="html">
+                    <div class="project-image">
+                        <img src="assets/landingpage.png" alt="Responsive Website">
+                    </div>
+                    <div class="project-info">
+                        <h3>Responsive Landing Page</h3>
+                        <p>A fully responsive landing page built with HTML5 and CSS3</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="html">
+                    <div class="project-image">
+                        <img src="assets/animation.png" alt="CSS Animation">
+                    </div>
+                    <div class="project-info">
+                        <h3>CSS Animation Showcase</h3>
+                        <p>Exploring CSS animations and transitions</p>
+                        <div class="project-tags">
+                            <span class="tag">CSS</span>
+                            <span class="tag">HTML</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="javascript">
+                    <div class="project-image">
+                        <img src="assets/todo.png" alt="To-Do List">
+                    </div>
+                    <div class="project-info">
+                        <h3>Interactive To-Do List</h3>
+                        <p>A task management app with JavaScript event handling and local storage</p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">HTML</span>
+                        </div>
+                    </div>
+                </article>
+
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <form class="contact-form" id="contactForm" novalidate>
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input 
+                        type="text" 
+                        id="name" 
+                        name="name" 
+                        required 
+                        pattern="[A-Za-z\s]{2,}"
+                        placeholder="Enter your full name"
+                    >
+                    <span class="error-message" id="nameError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        required 
+                        placeholder="your.email@example.com"
+                    >
+                    <span class="error-message" id="emailError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input 
+                        type="tel" 
+                        id="phone" 
+                        name="phone" 
+                        pattern="[0-9]{10,}"
+                        placeholder="0998-765-4321"
+                    >
+                    <span class="error-message" id="phoneError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="website">Website/Portfolio URL</label>
+                    <input 
+                        type="url" 
+                        id="website" 
+                        name="website" 
+                        placeholder="https://example.com"
+                    >
+                    <span class="error-message" id="websiteError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject *</label>
+                    <input 
+                        type="text" 
+                        id="subject" 
+                        name="subject" 
+                        required 
+                        minlength="5"
+                        placeholder="Brief subject line"
+                    >
+                    <span class="error-message" id="subjectError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea 
+                        id="message" 
+                        name="message" 
+                        rows="5" 
+                        required 
+                        minlength="10"
+                        placeholder="Your message here..."
+                    ></textarea>
+                    <span class="error-message" id="messageError"></span>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+
+            <div class="success-message" id="successMessage">
+                <p>✅ Thank you! Your message has been sent successfully.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
